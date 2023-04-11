@@ -3,12 +3,12 @@
     color: azure;
     text-align: center;
     padding: 15px;
-    width: 500px;
 }
 
 .largeText{
     font-size: 2rem;
 }
+
 
 .card{
     background: #ffda77;
@@ -17,6 +17,7 @@
     padding: 10px;
     width: 500px;
     display: inline-block;
+    margin: 21px;
 }
 
 .cardTitle{
