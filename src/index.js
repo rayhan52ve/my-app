@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
+const todoTitle = "Call Family";
+const todoDesc = "Laborum esse proident Lorem laboris commodo cillum nostrud ullamco non aute in voluptate non quis. Excepteur eiusmod excepteur sit laborum nulla consequat aliquip nulla ullamco sint nisi excepteur dolor. Pariatur cupidatat consectetur sunt magna. Laborum et eiusmod commodo fugiat voluptate cillum cupidatat quis dolor eiusmod velit tempor do. Excepteur elit in excepteur nulla nulla sunt nostrud dolor sint consectetur cillum laborum minim. Ad anim incididunt amet nulla dolore nulla commodo non aliquip. Laborum excepteur commodo quis consequat ut et quis ut laborum ex labore amet consectetur.";
+const date = new Date();
+const dateName = date.getDate();
+const monthName = date.getMonth();
+const currentYear = date.getFullYear();
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <div>
+     <h1>Todo App</h1>
+     <h3>{todoTitle}</h3>
+     <p>{todoDesc}</p>
+     <p>{dateName + "/" + monthName + "/" + currentYear}</p>
+    </div>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
